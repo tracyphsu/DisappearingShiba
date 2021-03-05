@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing Ninja</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            width: 1000px;
+            font-family: 'Fjalla One', sans-serif;
+            background-color: plum;
+            color: white;
+        }
+
+        img{
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        button{
+            width: 50px;
+            background-color: pink;
+            border: 1px solid white;
+            margin-left: 20px;
+            box-shadow: 2px 2px 2px black;
+        }
+
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".content img").click(function(){
+                $(this)
+                .hide("img");
+            })
+            
+            $("button").click(function(){
+                $("img").show();
+            })
+
+        })
+    
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Disappearing Shibas</h1>
+        <div class="content">
+            <img src="images/niners.JPG">
+            <img src="images/niners.JPG">
+            <img src="images/niners.JPG">
+            <img src="images/niners.JPG">
+            <img src="images/niners.JPG">
+            <img src="images/niners.JPG">
+            <img src="images/niners.JPG">
+            <img src="images/niners.JPG">
+        </div>
+        <button>Restore</button>
+    </div>
+</body>
+
+</html>
